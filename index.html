@@ -5,93 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
     <h1>JaveScript</h1>
     <h2>本期預測號碼==></h2>
+    <script src="./index.js"></script>
 
     <script>
-
-        // 函示宣告
-        function getRandomInt(start, end) {
-            let x = Math.floor(Math.random() * end) + start;
-            return x
-
-        }
-
-
-        // // 陣列(串列)
-        // // 外迴圈(控制組數) => 產生五組號碼
-        // let numbers = []
-        // for (let j = 0; j < 5; j++) {
-        //     let number = [];
-        //     // 內迴圈輸出六個號碼到網頁上
-        //     for (let i = 0; i < 6; i++) {
-        //         let x = getRandomInt(1, 49);
-
-        //         // cocument.write("<h3>第" + (i+1) + "個號碼:" + x + "</h3>")
-        //         // 使用反引號+ ${}
-        //         // document.write(`<h3>第 ${i + 1} 個號碼為: ${x} </h3>`);
-        //         number.push(x);
-        //     }
-        //     // console.log(number);
-        //     numbers.push(number);
-        // }
-        // console.log(numbers);
-
-        document.write(Date() + "<hr>");
-
-        let rows = []
-        for (let j = 0; j < 5; j++) {
-            let newnumbers = [];
-            // 內迴圈輸出六個號碼到網頁上
-
-            while (true) {
-                let x = getRandomInt(1, 49);
-                // ! => not ，includes(是否包含)
-                if (!newnumbers.includes(x)) {
-                    newnumbers.push(x);
-                }
-                if (newnumbers.length == 6) {
-                    break
-                }
-            }
-
-
-
-            newnumbers.sort(compare)
-            // 排序
-            rows.push(newnumbers);
-        }
-        // 排序的方法
-        function compare(a, b) {
-            return a - b;
-        }
-
-
-        // 輸出樂透號碼到doument
-        console.log(rows);
-
-
-        for (let i = 0; i < rows.length; i++) {
-            result = rows[i].join(" , ")
-            console.log(rows[i].join(","));
-            document.write(`<h3>第${i + 1}組號碼:${result}</h3><hr>`);
-        }
-
-
-
-
-        // cocument.write("<h3>第" + (i+1) + "個號碼:" + x + "</h3>")
-        // 使用反引號+ ${}
-        // document.write(`<h3>第 ${i + 1} 個號碼為: ${x} </h3>`);
-
-
-
-
-
-
 
 
     </script>
