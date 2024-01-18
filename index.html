@@ -40,7 +40,7 @@
         // }
         // console.log(numbers);
 
-
+        document.write(Date() + "<hr>");
 
         let rows = []
         for (let j = 0; j < 5; j++) {
@@ -57,9 +57,19 @@
                     break
                 }
             }
+
+
+
+            newnumbers.sort(compare)
             // 排序
             rows.push(newnumbers);
         }
+        // 排序的方法
+        function compare(a, b) {
+            return a - b;
+        }
+
+
         // 輸出樂透號碼到doument
         console.log(rows);
 
